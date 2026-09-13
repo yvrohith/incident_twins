@@ -1,0 +1,43 @@
+{
+  "schema": "incident-twins-release-provenance/2",
+  "candidate": "submission_candidate_v5",
+  "parent_candidate": "submission_candidate_v4",
+  "parent_provenance_sha256": "402a96df0dd36de2e4e96ba720cfb9dc4a251f96d290bff752f23e0386f448bb",
+  "scientific_logic_changed": false,
+  "public_inputs_changed": false,
+  "original_199_expected_answers_changed": false,
+  "runtime_policy_changed": false,
+  "changes": [
+    "add separate observed 36-cell matrix and runner",
+    "add baseline caveat in human display and README",
+    "record limitations, not repair query"
+  ],
+  "inherited_v4_provenance": {
+    "candidate": "submission_candidate_v4",
+    "changed_release_files": [
+      "README.md",
+      "file_manifest.json",
+      "replay.py",
+      "run_demo.py",
+      "runtime_policy.json"
+    ],
+    "historical_judge_zip_sha256": "632b1dfd9cacf83218af8405b07b631f52f09b998390c8acf6d09feee9e06828",
+    "historical_provenance_note": "source_provenance.json describes the v3 copy operation; its old launcher description is historical, not the current release policy.",
+    "historical_source_provenance_sha256": "308c4f6da5171cd4e041f2e81c65d5b923659edd00cda68a0c2ab2a708eb9ec6",
+    "historical_source_provenance_unchanged": true,
+    "new_release_files": [
+      "docs/RUNTIME_POLICY.md",
+      "docs/WALKTHROUGH.md",
+      "historical_runtime_validation.json",
+      "presentation.py",
+      "release_runtime.py",
+      "replay_extension.py",
+      "replay_original.py"
+    ],
+    "runtime_presentation_changes": "Shared final CPython 3.12/3.13 policy, frozen historical strict list, structured runtime provenance, optional human display and nonzero unsupported/inconsistent process status; scientific answers unchanged.",
+    "saved_expected_answers_unchanged": true,
+    "schema": "incident-twins-release-provenance/1",
+    "scientific_copied_files_verified": 104,
+    "scientific_logic_changed": false
+  }
+}

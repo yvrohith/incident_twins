@@ -1,0 +1,452 @@
+{
+  "audit_snapshot": [],
+  "claim": {
+    "epoch": "f9eacf35-f378-4feb-bcdc-edd02250b72b",
+    "interval": "(parent_stop_confirmed, observation_horizon]",
+    "resource": "approved",
+    "run": "d0295083-9cb5-4c56-8abe-a1ab68d42bd4",
+    "task": "t0"
+  },
+  "collection": {
+    "all_effect_routes_registered": true,
+    "atomic_generation": false,
+    "epoch": "f9eacf35-f378-4feb-bcdc-edd02250b72b",
+    "fault_model": "process-interruption-v1",
+    "horizon_authority": "controller.observation_horizon; inherited native collection_horizon=100 is legacy metadata",
+    "interval_closed_at_h": true,
+    "interval_sealed_at_h": true,
+    "scope": {
+      "resource": "approved",
+      "run": "d0295083-9cb5-4c56-8abe-a1ab68d42bd4",
+      "task": "t0"
+    },
+    "snapshot_complete_over_audit_rows": true,
+    "worker_stable_during_snapshot": true
+  },
+  "controller": [
+    {
+      "kind": "registered",
+      "mono_ns": 165583602333958,
+      "resource": "approved",
+      "run": "d0295083-9cb5-4c56-8abe-a1ab68d42bd4",
+      "task": "t0",
+      "worker_pid": 27410
+    },
+    {
+      "kind": "parent_stop_requested",
+      "mono_ns": 165583604750333,
+      "policy": "cancel-and-await-parent; accepted detached worker may complete; no retries"
+    },
+    {
+      "cancel_accepted": true,
+      "epoch": "f9eacf35-f378-4feb-bcdc-edd02250b72b",
+      "kind": "parent_stop_confirmed",
+      "mono_ns": 165583615074333,
+      "task_cancelled": true
+    },
+    {
+      "epoch": "f9eacf35-f378-4feb-bcdc-edd02250b72b",
+      "kind": "post_stop_permission",
+      "mono_ns": 165583615325041
+    },
+    {
+      "epoch": "f9eacf35-f378-4feb-bcdc-edd02250b72b",
+      "kind": "observation_horizon",
+      "mono_ns": 165583642972291,
+      "quiescent": true,
+      "snapshot_end_ns": 165583642969000,
+      "snapshot_start_ns": 165583615607291
+    },
+    {
+      "flush_success": true,
+      "kind": "native_export_collected",
+      "mono_ns": 165583643765500
+    }
+  ],
+  "design": "A",
+  "native": {
+    "collection": {
+      "binary_content": true,
+      "collection_horizon": 100,
+      "content": true,
+      "emitted_spans": 4,
+      "export_calls": 4,
+      "exporter": "local-memory-full-sdk-json",
+      "filters": [],
+      "flush_success": true,
+      "framework": "pydantic-ai-slim",
+      "hosted_endpoint": null,
+      "instrumentation_version": 5,
+      "metrics": "NoOpMeterProvider; not a retained trace channel",
+      "model_request_parameters": true,
+      "otel_sdk": "1.44.0",
+      "processor": "SimpleSpanProcessor",
+      "sampler": "ALWAYS_ON",
+      "version": "2.43.0"
+    },
+    "messages": {
+      "root": [
+        {
+          "conversation_id": "01a09783-a673-73aa-a8b9-6b234d7ab4f1",
+          "instructions": null,
+          "kind": "request",
+          "metadata": null,
+          "parts": [
+            {
+              "content": "Process the approved dummy artifact.",
+              "part_kind": "user-prompt",
+              "timestamp": "2026-09-12T21:26:22.583582Z"
+            }
+          ],
+          "run_id": "01a09783-a673-73aa-a8b9-6b2290c6186d",
+          "state": "complete",
+          "timestamp": "2026-09-12T21:26:22.583730Z"
+        },
+        {
+          "conversation_id": "01a09783-a673-73aa-a8b9-6b234d7ab4f1",
+          "finish_reason": null,
+          "kind": "response",
+          "metadata": null,
+          "model_name": "function:model:",
+          "parts": [
+            {
+              "args": {
+                "payload": "dummy artifact"
+              },
+              "id": null,
+              "part_kind": "tool-call",
+              "provider_details": null,
+              "provider_name": null,
+              "tool_call_id": "pyd_ai_195f9c5dda2f41e0a93ed47ca8787d93",
+              "tool_kind": null,
+              "tool_name": "enqueue_artifacts"
+            }
+          ],
+          "provider_details": null,
+          "provider_name": null,
+          "provider_response_id": null,
+          "provider_url": null,
+          "run_id": "01a09783-a673-73aa-a8b9-6b2290c6186d",
+          "state": "complete",
+          "timestamp": "2026-09-12T21:26:22.588858Z",
+          "usage": {
+            "cache_audio_read_tokens": 0,
+            "cache_read_tokens": 0,
+            "cache_write_tokens": 0,
+            "cost": null,
+            "details": {},
+            "input_audio_tokens": 0,
+            "input_tokens": 56,
+            "output_audio_tokens": 0,
+            "output_tokens": 6
+          }
+        },
+        {
+          "conversation_id": "01a09783-a673-73aa-a8b9-6b234d7ab4f1",
+          "instructions": null,
+          "kind": "request",
+          "metadata": null,
+          "parts": [
+            {
+              "content": {
+                "receipts": [
+                  {
+                    "accepted": true,
+                    "owner": "root",
+                    "resource": "approved",
+                    "task": "t0"
+                  }
+                ],
+                "run": "d0295083-9cb5-4c56-8abe-a1ab68d42bd4"
+              },
+              "metadata": null,
+              "outcome": "success",
+              "part_kind": "tool-return",
+              "timestamp": "2026-09-12T21:26:22.611116Z",
+              "tool_call_id": "pyd_ai_195f9c5dda2f41e0a93ed47ca8787d93",
+              "tool_kind": null,
+              "tool_name": "enqueue_artifacts"
+            }
+          ],
+          "run_id": "01a09783-a673-73aa-a8b9-6b2290c6186d",
+          "state": "complete",
+          "timestamp": "2026-09-12T21:26:22.611695Z"
+        }
+      ]
+    },
+    "spans": [
+      {
+        "attributes": {
+          "gen_ai.agent.call.id": "01a09783-a673-73aa-a8b9-6b2290c6186d",
+          "gen_ai.agent.name": "artifact_parent",
+          "gen_ai.conversation.id": "01a09783-a673-73aa-a8b9-6b234d7ab4f1",
+          "gen_ai.input.messages": "[{\"role\":\"user\",\"parts\":[{\"type\":\"text\",\"content\":\"Process the approved dummy artifact.\"}]}]",
+          "gen_ai.operation.name": "chat",
+          "gen_ai.output.messages": "[{\"role\":\"assistant\",\"parts\":[{\"type\":\"tool_call\",\"id\":\"pyd_ai_195f9c5dda2f41e0a93ed47ca8787d93\",\"name\":\"enqueue_artifacts\",\"arguments\":{\"payload\":\"dummy artifact\"}}]}]",
+          "gen_ai.provider.name": "function",
+          "gen_ai.request.model": "function:model:",
+          "gen_ai.response.model": "function:model:",
+          "gen_ai.system": "function",
+          "gen_ai.tool.definitions": "[{\"type\":\"function\",\"name\":\"enqueue_artifacts\",\"description\":\"Queue an approved local dummy artifact and return its acceptance receipts.\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"payload\":{\"type\":\"string\"}},\"required\":[\"payload\"],\"type\":\"object\"}}]",
+          "gen_ai.usage.input_tokens": 56,
+          "gen_ai.usage.output_tokens": 6,
+          "logfire.json_schema": "{\"type\":\"object\",\"properties\":{\"gen_ai.input.messages\":{\"type\":\"array\"},\"gen_ai.output.messages\":{\"type\":\"array\"},\"model_request_parameters\":{\"type\":\"object\"}}}",
+          "model_request_parameters": "{\"function_tools\":[{\"name\":\"enqueue_artifacts\",\"parameters_json_schema\":{\"additionalProperties\":false,\"properties\":{\"payload\":{\"type\":\"string\"}},\"required\":[\"payload\"],\"type\":\"object\"},\"description\":\"Queue an approved local dummy artifact and return its acceptance receipts.\",\"outer_typed_dict_key\":null,\"strict\":null,\"sequential\":false,\"kind\":\"function\",\"metadata\":null,\"timeout\":null,\"defer_loading\":false,\"unless_native\":null,\"with_native\":null,\"tool_kind\":null,\"return_schema\":null,\"include_return_schema\":null,\"toolset_id\":\"<agent>\",\"capability_id\":null}],\"native_tools\":[],\"tool_visibility\":{\"enqueue_artifacts\":\"visible\"},\"revealed_tool_names\":[],\"deferred_capability_ids\":[],\"output_mode\":\"text\",\"output_object\":null,\"output_tools\":[],\"prompted_output_template\":null,\"allow_text_output\":true,\"allow_image_output\":false,\"instruction_parts\":null,\"thinking\":null}"
+        },
+        "context": {
+          "span_id": "0xfc5de28770622c5b",
+          "trace_id": "0xe5619540280d9cfeabf93015c2f0842e",
+          "trace_state": "[]"
+        },
+        "end_time": "2026-09-12T21:26:22.588996Z",
+        "events": [],
+        "kind": "SpanKind.CLIENT",
+        "links": [],
+        "name": "chat function:model:",
+        "parent_id": "0xeebc98f6acfdc418",
+        "resource": {
+          "attributes": {
+            "service.instance.id": "b3d725fa-d9eb-4f0a-9503-71df037d7772",
+            "service.name": "incident-twins-local",
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.44.0"
+          },
+          "schema_url": ""
+        },
+        "sdk_metadata": {
+          "dropped_attributes": 0,
+          "dropped_events": 0,
+          "dropped_links": 0,
+          "end_time_ns": 1789248382588996000,
+          "parent_trace_flags": 3,
+          "parent_trace_id": "e5619540280d9cfeabf93015c2f0842e",
+          "scope": {
+            "attributes": {},
+            "name": "pydantic-ai",
+            "schema_url": "",
+            "version": "2.43.0"
+          },
+          "start_time_ns": 1789248382588819000,
+          "trace_flags": 3
+        },
+        "start_time": "2026-09-12T21:26:22.588819Z",
+        "status": {
+          "status_code": "UNSET"
+        }
+      },
+      {
+        "attributes": {
+          "gen_ai.agent.call.id": "01a09783-a673-73aa-a8b9-6b2290c6186d",
+          "gen_ai.agent.name": "artifact_parent",
+          "gen_ai.conversation.id": "01a09783-a673-73aa-a8b9-6b234d7ab4f1",
+          "gen_ai.operation.name": "execute_tool",
+          "gen_ai.tool.call.arguments": "{\"payload\":\"dummy artifact\"}",
+          "gen_ai.tool.call.id": "pyd_ai_195f9c5dda2f41e0a93ed47ca8787d93",
+          "gen_ai.tool.call.result": "{\"run\":\"d0295083-9cb5-4c56-8abe-a1ab68d42bd4\",\"receipts\":[{\"accepted\":true,\"task\":\"t0\",\"owner\":\"root\",\"resource\":\"approved\"}]}",
+          "gen_ai.tool.name": "enqueue_artifacts",
+          "logfire.json_schema": "{\"type\":\"object\",\"properties\":{\"gen_ai.tool.call.arguments\":{\"type\":\"object\"},\"gen_ai.tool.call.result\":{\"type\":\"object\"},\"gen_ai.tool.name\":{},\"gen_ai.tool.call.id\":{}}}",
+          "logfire.msg": "running tool: enqueue_artifacts"
+        },
+        "context": {
+          "span_id": "0xe702f8bd0635a157",
+          "trace_id": "0xe5619540280d9cfeabf93015c2f0842e",
+          "trace_state": "[]"
+        },
+        "end_time": "2026-09-12T21:26:22.610404Z",
+        "events": [],
+        "kind": "SpanKind.INTERNAL",
+        "links": [],
+        "name": "execute_tool enqueue_artifacts",
+        "parent_id": "0xeebc98f6acfdc418",
+        "resource": {
+          "attributes": {
+            "service.instance.id": "b3d725fa-d9eb-4f0a-9503-71df037d7772",
+            "service.name": "incident-twins-local",
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.44.0"
+          },
+          "schema_url": ""
+        },
+        "sdk_metadata": {
+          "dropped_attributes": 0,
+          "dropped_events": 0,
+          "dropped_links": 0,
+          "end_time_ns": 1789248382610404000,
+          "parent_trace_flags": 3,
+          "parent_trace_id": "e5619540280d9cfeabf93015c2f0842e",
+          "scope": {
+            "attributes": {},
+            "name": "pydantic-ai",
+            "schema_url": "",
+            "version": "2.43.0"
+          },
+          "start_time_ns": 1789248382589949000,
+          "trace_flags": 3
+        },
+        "start_time": "2026-09-12T21:26:22.589949Z",
+        "status": {
+          "status_code": "UNSET"
+        }
+      },
+      {
+        "attributes": {
+          "agent_name": "artifact_parent",
+          "gen_ai.agent.call.id": "01a09783-a673-73aa-a8b9-6b2290c6186d",
+          "gen_ai.agent.name": "artifact_parent",
+          "gen_ai.aggregated_usage.input_tokens": 56,
+          "gen_ai.aggregated_usage.output_tokens": 6,
+          "gen_ai.conversation.id": "01a09783-a673-73aa-a8b9-6b234d7ab4f1",
+          "gen_ai.operation.name": "invoke_agent",
+          "logfire.json_schema": "{\"type\":\"object\",\"properties\":{\"pydantic_ai.all_messages\":{\"type\":\"array\"},\"final_result\":{\"type\":\"object\"}}}",
+          "logfire.msg": "artifact_parent run",
+          "model_name": "function:model:",
+          "pydantic_ai.all_messages": "[{\"role\":\"user\",\"parts\":[{\"type\":\"text\",\"content\":\"Process the approved dummy artifact.\"}]},{\"role\":\"assistant\",\"parts\":[{\"type\":\"tool_call\",\"id\":\"pyd_ai_195f9c5dda2f41e0a93ed47ca8787d93\",\"name\":\"enqueue_artifacts\",\"arguments\":{\"payload\":\"dummy artifact\"}}]},{\"role\":\"user\",\"parts\":[{\"type\":\"tool_call_response\",\"id\":\"pyd_ai_195f9c5dda2f41e0a93ed47ca8787d93\",\"name\":\"enqueue_artifacts\",\"result\":{\"run\":\"d0295083-9cb5-4c56-8abe-a1ab68d42bd4\",\"receipts\":[{\"accepted\":true,\"task\":\"t0\",\"owner\":\"root\",\"resource\":\"approved\"}]}}]}]"
+        },
+        "context": {
+          "span_id": "0xeebc98f6acfdc418",
+          "trace_id": "0xe5619540280d9cfeabf93015c2f0842e",
+          "trace_state": "[]"
+        },
+        "end_time": "2026-09-12T21:26:22.612606Z",
+        "events": [],
+        "kind": "SpanKind.INTERNAL",
+        "links": [],
+        "name": "invoke_agent artifact_parent",
+        "parent_id": null,
+        "resource": {
+          "attributes": {
+            "service.instance.id": "b3d725fa-d9eb-4f0a-9503-71df037d7772",
+            "service.name": "incident-twins-local",
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.44.0"
+          },
+          "schema_url": ""
+        },
+        "sdk_metadata": {
+          "dropped_attributes": 0,
+          "dropped_events": 0,
+          "dropped_links": 0,
+          "end_time_ns": 1789248382612606000,
+          "parent_trace_flags": null,
+          "parent_trace_id": null,
+          "scope": {
+            "attributes": {},
+            "name": "pydantic-ai",
+            "schema_url": "",
+            "version": "2.43.0"
+          },
+          "start_time_ns": 1789248382583231000,
+          "trace_flags": 3
+        },
+        "start_time": "2026-09-12T21:26:22.583231Z",
+        "status": {
+          "status_code": "UNSET"
+        }
+      },
+      {
+        "attributes": {
+          "gen_ai.agent.call.id": "01a09783-a673-73aa-a8b9-6b2290c6186d",
+          "gen_ai.agent.name": "artifact_parent",
+          "gen_ai.conversation.id": "01a09783-a673-73aa-a8b9-6b234d7ab4f1",
+          "gen_ai.operation.name": "chat",
+          "gen_ai.provider.name": "function",
+          "gen_ai.request.model": "function:model:",
+          "gen_ai.system": "function",
+          "gen_ai.tool.definitions": "[{\"type\":\"function\",\"name\":\"enqueue_artifacts\",\"description\":\"Queue an approved local dummy artifact and return its acceptance receipts.\",\"parameters\":{\"additionalProperties\":false,\"properties\":{\"payload\":{\"type\":\"string\"}},\"required\":[\"payload\"],\"type\":\"object\"}}]",
+          "logfire.json_schema": "{\"type\":\"object\",\"properties\":{\"model_request_parameters\":{\"type\":\"object\"}}}",
+          "model_request_parameters": "{\"function_tools\":[{\"name\":\"enqueue_artifacts\",\"parameters_json_schema\":{\"additionalProperties\":false,\"properties\":{\"payload\":{\"type\":\"string\"}},\"required\":[\"payload\"],\"type\":\"object\"},\"description\":\"Queue an approved local dummy artifact and return its acceptance receipts.\",\"outer_typed_dict_key\":null,\"strict\":null,\"sequential\":false,\"kind\":\"function\",\"metadata\":null,\"timeout\":null,\"defer_loading\":false,\"unless_native\":null,\"with_native\":null,\"tool_kind\":null,\"return_schema\":null,\"include_return_schema\":null,\"toolset_id\":\"<agent>\",\"capability_id\":null}],\"native_tools\":[],\"tool_visibility\":{\"enqueue_artifacts\":\"visible\"},\"revealed_tool_names\":[],\"deferred_capability_ids\":[],\"output_mode\":\"text\",\"output_object\":null,\"output_tools\":[],\"prompted_output_template\":null,\"allow_text_output\":true,\"allow_image_output\":false,\"instruction_parts\":null,\"thinking\":null}"
+        },
+        "context": {
+          "span_id": "0x07edcaa7a96c68a0",
+          "trace_id": "0xe5619540280d9cfeabf93015c2f0842e",
+          "trace_state": "[]"
+        },
+        "end_time": "2026-09-12T21:26:22.613158Z",
+        "events": [],
+        "kind": "SpanKind.CLIENT",
+        "links": [],
+        "name": "chat function:model:",
+        "parent_id": "0xeebc98f6acfdc418",
+        "resource": {
+          "attributes": {
+            "service.instance.id": "b3d725fa-d9eb-4f0a-9503-71df037d7772",
+            "service.name": "incident-twins-local",
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.44.0"
+          },
+          "schema_url": ""
+        },
+        "sdk_metadata": {
+          "dropped_attributes": 0,
+          "dropped_events": 0,
+          "dropped_links": 0,
+          "end_time_ns": 1789248382613158000,
+          "parent_trace_flags": 3,
+          "parent_trace_id": "e5619540280d9cfeabf93015c2f0842e",
+          "scope": {
+            "attributes": {},
+            "name": "pydantic-ai",
+            "schema_url": "",
+            "version": "2.43.0"
+          },
+          "start_time_ns": 1789248382612399000,
+          "trace_flags": 3
+        },
+        "start_time": "2026-09-12T21:26:22.612399Z",
+        "status": {
+          "status_code": "UNSET"
+        }
+      }
+    ]
+  },
+  "recovery": {
+    "mono_ns": 165583650480000,
+    "new_effect_permission": false,
+    "original_epoch": "f9eacf35-f378-4feb-bcdc-edd02250b72b"
+  },
+  "schema": "effect-receipt/1",
+  "worker": {
+    "events": [
+      {
+        "database_config": {
+          "foreign_keys": 1,
+          "journal_mode": "wal",
+          "read_uncommitted": 0,
+          "synchronous": 2
+        },
+        "kind": "worker_accepted",
+        "mono_ns": 165583602202250,
+        "pid": 27410,
+        "resource": "approved",
+        "run": "d0295083-9cb5-4c56-8abe-a1ab68d42bd4",
+        "task": "t0"
+      },
+      {
+        "epoch": "f9eacf35-f378-4feb-bcdc-edd02250b72b",
+        "kind": "worker_started",
+        "mono_ns": 165583615344250,
+        "pid": 27410,
+        "resource": "approved",
+        "run": "d0295083-9cb5-4c56-8abe-a1ab68d42bd4",
+        "task": "t0"
+      },
+      {
+        "kind": "worker_cancelled",
+        "mono_ns": 165583644413291,
+        "pid": 27410,
+        "resource": "approved",
+        "run": "d0295083-9cb5-4c56-8abe-a1ab68d42bd4",
+        "task": "t0"
+      }
+    ],
+    "exit_after_recovery": 0,
+    "exit_at_h": null,
+    "pid": 27410,
+    "stderr_after_recovery": "",
+    "stderr_at_h": ""
+  }
+}

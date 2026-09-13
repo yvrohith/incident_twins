@@ -1,0 +1,1 @@
+{"claim":{"cutoff":50,"horizon":100,"interval":"(parent_stop_confirmed, observation_horizon]","resources":["approved"],"root":"root"},"mechanism":"async","tasks":[{"initial":"unknown","owner":"root","resource":"approved","task":"t0"},{"initial":"unknown","owner":"root","resource":"approved","task":"t1"}]}

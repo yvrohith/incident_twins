@@ -1,0 +1,62 @@
+{
+  "created_utc": "2026-09-12T21:26:17.563611+00:00",
+  "designs": [
+    "A",
+    "B"
+  ],
+  "development_executions": 2,
+  "environment": {
+    "otel_sdk": "1.44.0",
+    "pydantic_ai": "2.43.0",
+    "python": "3.12.13",
+    "sqlite": "3.53.1"
+  },
+  "files": {
+    "artifacts/frozen_manifest.json": "74c4ef6a8d2d405412ecce32cec8ffb4896b0407d2aec3218e01f3a203887d14",
+    "pyproject.toml": "a9726eda1d71e2b28ac2865a4f093e1b448f2485c6eafddce241a65a28e28189",
+    "requirements.lock": "b38140b41595f2133f300c57031b5bd53e66fcbc57217eec91423bc0eb1e3417",
+    "research_extensions/effect_receipt_v1/__init__.py": "69a3459b4293b523836e2a18d8ef2369d5ddcf4a0c068c2e0e5519d6baa7fcf1",
+    "research_extensions/effect_receipt_v1/checker.py": "834292600e8996f53bfe13f113e55357510e7940801957100942a1ab207d0e3e",
+    "research_extensions/effect_receipt_v1/controls.py": "ad1f3d5ea85ba007895aa0a9340965348bc1e369ab45d0dfc3f424be80223b02",
+    "research_extensions/effect_receipt_v1/db_validate.py": "5e0141b4d5dcad17666965a2abc73531031dd1b095291c57a74e60c1648d80ca",
+    "research_extensions/effect_receipt_v1/evaluate.py": "d5d245a2ff3863997d154feaf85c43a5609b5045c655e42befeb29593852ec02",
+    "research_extensions/effect_receipt_v1/freeze.py": "3d351e5496e642b0568fe185cbd6cbb4efc8c1894513de959f676b2695de47e9",
+    "research_extensions/effect_receipt_v1/independent_notes.md": "c3bc2baaaa744353c7d182a23244c48337bd13d5f5dd1c4530b7b551975e80ca",
+    "research_extensions/effect_receipt_v1/independent_validate.py": "c49a9ab23837fed32254363251124ae1c2c9ae4b2f6a6492ff6e752d5eb66644",
+    "research_extensions/effect_receipt_v1/matrix.py": "a95539600dd3c0251363795feb11e7b9761ea49943603fe888bd855c700eb889",
+    "research_extensions/effect_receipt_v1/methods_review.md": "9f4f2653fe19a4f5908cbaf6d5033a0864134614d7dffd78575d059588d4abfc",
+    "research_extensions/effect_receipt_v1/model.py": "cff39ba3f1b7339aa4e04f94e4c8b0ca344b37979506ae3ad5f922cb1d29cec7",
+    "research_extensions/effect_receipt_v1/model_notes.md": "e3b65c9ef3c50f17b86d7f4837e577ced04bd0bdc90f99728446d6a8ae74237f",
+    "research_extensions/effect_receipt_v1/model_report.json": "639051df6d9cbbc85a5d14fba4c21ff05a76576b3bdcabd471f93da31b7b4c82",
+    "research_extensions/effect_receipt_v1/protocol.md": "6f94b69087077923a6a39e9433de292fe56d4368d49d08b1cedcb22cab0e3356",
+    "research_extensions/effect_receipt_v1/run_one.py": "2995877d3a1d46a9c8aa00479b5325564825ebd705b18595fe3c176ef16242aa",
+    "research_extensions/effect_receipt_v1/sources.md": "c8c8ded91ba27660523b14d630e6d399f2b3b451431f26ded1d921fcb3033eff",
+    "research_extensions/effect_receipt_v1/test_independent_validate.py": "2e29094aee00287114930178f9db15efc079f5511dd616a78c3d328368b896e6",
+    "research_extensions/effect_receipt_v1/test_model.py": "286f0dde440266e97c7c0029bcdb5dec72dd5b8ad5b5d1b2cedfa92b2fd95f7b",
+    "research_extensions/effect_receipt_v1/test_runtime_contract.py": "0db576f5eadbfaafb8ea66f8739bcf858fa3a9e9d1542c2cd8979c424709bf63",
+    "research_extensions/effect_receipt_v1/worker.py": "8c271ae656b8e18ab386c0a98dfa7fd499eca90f63cd322c97dd8516fb718db0",
+    "src/incident_twins/__init__.py": "98c526c0eef4e97febc07f604a2e150483f8513397e10eaa6d4158c4114bf9b9",
+    "src/incident_twins/adapters/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/incident_twins/adapters/pydantic_ai.py": "c4add556c49e375aa036bfd3bc8d7316bede91b7fd5fc9b5d9c9fce2e62cfee3",
+    "src/incident_twins/analysis.py": "abdad5ec8c10f0d02d359303a09ecac278f919581dc44250dfa5841a940c2965",
+    "src/incident_twins/cli.py": "9d26b3fd0697f73afbc2a544dba94469091874b1031d2c60531d3d34b3b7cae4",
+    "src/incident_twins/contracts.py": "54421dc45e961b12bb521443719fa4dcaf04f8f7c0443502fed55419adcb6157",
+    "src/incident_twins/instruments.py": "361dea4d653828854bc733b535c5ca9121f15e2469cf478633fbeb5804d6db44",
+    "src/incident_twins/model.py": "445aa731de6bec42511f1aaad6d6dee2db0b4e80053125318a6ffc0646f44ebf",
+    "src/incident_twins/observations.py": "e302f12467a674dc4c0a555b6b53a64d66125f3e72266b504e70fe6f60d2375b",
+    "src/incident_twins/reference_checker.py": "26e62072f71ca470f0d5c072ca0dd947822bab59edd55c077e59d6364d440160",
+    "src/incident_twins/runtime.py": "7a209506d74c72f8c6be46c237f5c64fe32463cefb711f90d184bc79c0337cef",
+    "src/incident_twins/verdicts.py": "23e8bb9ea79fcf21a2ef565d2f439a665e7d178ee3e9ba3dde61806e98ba13b8"
+  },
+  "matrix_attempt_cap": 30,
+  "repetitions": 3,
+  "schedule_classes": [
+    "normal",
+    "interrupt_before_commit",
+    "interrupt_after_commit",
+    "delayed_delivery",
+    "pending"
+  ],
+  "schema": "effect-receipt-frozen/1",
+  "status": "prospective supplement after original study and two development runs"
+}

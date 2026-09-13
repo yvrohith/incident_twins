@@ -1,0 +1,46 @@
+{
+  "records": [
+    {
+      "all_child_imports_verified": true,
+      "checks": 199,
+      "failed": 0,
+      "implementation": "CPython",
+      "passed": 199,
+      "record": "submission_candidate_v3/smoke_test/attempt_1/3.12.13/runtime_result.json",
+      "sha256": "09692f0d700fb8c8f814881d308e3cd8143259e4c5c6adf6243ceb0d5b19d1cb",
+      "version": "3.12.13"
+    },
+    {
+      "all_child_imports_verified": true,
+      "checks": 199,
+      "failed": 0,
+      "implementation": "CPython",
+      "passed": 199,
+      "record": "submission_candidate_v3/smoke_test/attempt_1/3.12.14/runtime_result.json",
+      "sha256": "2f6c580930b30a9d4eb05d70f017debc4328ac4083b22dc344648c1c2b99f294",
+      "version": "3.12.14"
+    },
+    {
+      "all_child_imports_verified": true,
+      "checks": 199,
+      "failed": 0,
+      "implementation": "CPython",
+      "passed": 199,
+      "record": "submission_candidate_v3/smoke_test/attempt_1/3.13.15/runtime_result.json",
+      "sha256": "6ae768bcb8c893aa8682261c7814be43aaf28668b32e88afd34e3c1941790972",
+      "version": "3.13.15"
+    },
+    {
+      "all_child_imports_verified": true,
+      "checks": 199,
+      "failed": 0,
+      "implementation": "CPython",
+      "passed": 199,
+      "record": "submission_candidate_v3/smoke_test/attempt_1/3.13.5/runtime_result.json",
+      "sha256": "dbe41496b58db33ca3885f3ae81c82beea1a380787c6f1c747d33b65e5bbe93f",
+      "version": "3.13.5"
+    }
+  ],
+  "schema": "incident-twins-runtime-validation-records/1",
+  "scope": "Recorded candidate v3 saved-evidence compatibility; not experimental regeneration or independent authentication"
+}

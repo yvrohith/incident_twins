@@ -1,0 +1,5 @@
+Incident Twins: What Logs Can Establish After an Agent Stops
+Rohith YV
+Independent author
+
+After an agent stops, what can its logs establish about accepted work? Incident Twins checks whether retained evidence rules out in-scope commitments during a fixed post-stop interval. Study 1 uses scripted responses in Pydantic AI. Three asynchronous pairs have byte-identical configured native/controller records but opposite outcomes. Terminal receipts and a separate pending-work check distinguish outcome evidence from collection coverage. Study 2 tests whether effects can commit without audit records. In 30 process-interruption runs, separate transactions leave such gaps. A joint effect/audit transaction with a complete scoped snapshot resolves all 15 comparator runs. A simple query matches all 30 measured runs, but concludes on a contradictory control that the richer checker rejects. Study 2’s raw records differ: its opposing examples match only on declared selected fields. Neither study establishes permanent containment or permission to resume. I list what an operator should retain. The resulting verdict depends on explicit scope and trust.
